@@ -1,0 +1,141 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+}
+body{
+    font-family: "Tajawal", sans-serif;
+    background: #F8EDE3;
+    color: #8D493A;
+}
+
+@keyframes animation {
+    from { top: -100px; }
+    to { top: 0px; }
+}
+.content {
+    width: 80%;
+    margin: auto;
+    animation: animation 1s ease forwards;
+    position: relative;
+    top: 0px;
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+input{
+    width: 100%;
+    height: 40px;
+    margin: 5px 0px;
+    border-radius: 5px;
+    background: #D0B8A8;
+    color: #8D493A;
+    padding: 10px;
+}
+input:focus{
+    background: #47231b80;
+    color: #F8EDE3;
+    transform: scale(1.02);
+}
+::placeholder{
+    color: #8D493A;
+    text-transform: capitalize;
+}
+.price input{
+    width: 20%;
+}
+#total{
+    background: #40534C;
+    color: #F8EDE3;
+    padding: 10.1px 10px;
+    border-radius: 5px;
+}
+#total::before{
+    content: 'Total : ';
+}
+button{
+    width: 100%;
+    height: 35px;
+    cursor: pointer;
+    background: #8D493A;
+    color: #F8EDE3;
+    font-size: 15px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+button:hover{
+    background: #D0B8A8;
+    color: #8D493A;
+    letter-spacing: 1.5px;
+    transition: 0.8s;
+}
+.searchButtons{
+    display: flex;
+    justify-content: space-between;
+}
+.searchButtons button{
+    width: 49.8%;
+}
+#deleteAll{
+    margin: 5px 0px;
+    width: 100%;
+}
+#deleteAll button{
+    width: 100%;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+}
+table th{
+    text-transform: uppercase;
+}
+th,td{
+    padding: 5px;
+}
+
+td img{
+    width: 22px;
+}
+
+/* media query */
+@media screen and (max-width: 740px){
+    .content{
+        width: 92%;
+        padding-top: 50px;
+    }
+    input{
+        font-size: 10px;
+    }
+    button{
+        font-size: 12px;
+    }
+    .price input{
+        width: 16%;
+    }
+    table{
+        font-weight: 500;
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 500px){
+    .content{
+        width: 96%;
+    }
+    table{
+        font-weight: 500;
+        font-size: 8px;
+    }
+    table button{
+        width: 25px;
+        height: 30px;
+    }
+    table button img{
+        width: 20px;
+    }
+}
